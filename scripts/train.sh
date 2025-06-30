@@ -1,0 +1,15 @@
+python ddpm.py \
+    --train_dir ./dataset/train_small \
+    --val_dir ./dataset/val_small \
+    --output_dir ./checkpoints \
+    --batch_size 64 \
+    --tsteps 1000 \
+    --hidden 256 \
+    --lr 3e-4 \
+    --patience 20 \
+    --epochs 4 \
+    --every_n_epoch 2 \
+    --device cuda:0 \
+    --val_portion 0.01 \
+    --train_portion 0.025 \
+    --checkpoint ./checkpoints/best_model.pth
