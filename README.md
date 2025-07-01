@@ -17,21 +17,25 @@ Traditional OFDM channel estimation methods often lack robustness under varying 
 - **Input**: LS-estimated sparse pilot matrix (18x2)
 - **Output**: Full channel matrix (120x40)
 
-🛠 Tools & Libraries
+---
+
+## 🧰 Tools & Technologies
+
+**Libraries Used**
 - Python
 - PyTorch
 - NumPy
 - SciPy
 - Matplotlib
 
-🧠 Technologies Used
+**Technologies Applied**
 - Deep learning
 - Generative modeling
-- Conditional Diffusion model (DDPM)
+- Conditional diffusion model (DDPM)
 
 ---
 
-## 🔍 Key Features 
+## 🔑 Key Features 
 - ✨ **Conditional U-Net with Cross-Attention**
 pilot symbols are processed through a dedicated encoder and used as conditioning inputs at every scale of the U-Net via cross-attention.
 - 📈 **Superior Performance Within Generative Models**
@@ -46,8 +50,8 @@ trained on a cosine-based noise schedule with 1000 timesteps and reverse samplin
 <em>Learning patterns by denoising one timestep each.
 </p>
 
-- 🧪 **Evaluation Scripts**
-include test set evaluation, NMSE computation, and qualitative output visualization.
+- 🧪 **Evaluation Tools**
+include scripts for test set evaluation, NMSE computation, and qualitative result visualization.
 
 ---
 
@@ -60,8 +64,18 @@ include test set evaluation, NMSE computation, and qualitative output visualizat
 ├── scripts/
 │ ├── train.sh # Training script (edit for data path/checkpoint)
 │ └── test.sh # Evaluation script (edit for test data paths)
+├── doc/
+│ ├── ddpm_report.pdf # Full project pdf 
+│ ├── adding_Gnoise_forward.png # Forward process illustration
+│ ├── denoising_reeverse.png # Reverse process illustration
+│ └── performance_comparison.png # Performance comparison chart
 └── README.md
 ```
+---
+
+## 📄 Project Report 
+📘 Download the full project [report (PDF).](./doc/ddpm_report.pdf)
+
 ---
 
 ## 📊 Results ##
